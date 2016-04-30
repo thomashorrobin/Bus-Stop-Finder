@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4910E8581CD57AF300E06389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910E8571CD57AF300E06389 /* AppDelegate.swift */; };
+		4910E85A1CD57AF300E06389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910E8591CD57AF300E06389 /* ViewController.swift */; };
+		4910E85C1CD57AF300E06389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4910E85B1CD57AF300E06389 /* Assets.xcassets */; };
+		4910E85F1CD57AF300E06389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4910E85D1CD57AF300E06389 /* Main.storyboard */; };
+		4910E86A1CD57AF400E06389 /* Bus_Stop_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910E8691CD57AF400E06389 /* Bus_Stop_FinderTests.swift */; };
+		4910E8751CD57AF400E06389 /* Bus_Stop_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910E8741CD57AF400E06389 /* Bus_Stop_FinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4910E8661CD57AF400E06389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4910E84C1CD57AF200E06389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4910E8531CD57AF300E06389;
+			remoteInfo = "Bus Stop Finder";
+		};
+		4910E8711CD57AF400E06389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4910E84C1CD57AF200E06389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4910E8531CD57AF300E06389;
+			remoteInfo = "Bus Stop Finder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4910E8541CD57AF300E06389 /* Bus Stop Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bus Stop Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4910E8571CD57AF300E06389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4910E8591CD57AF300E06389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4910E85B1CD57AF300E06389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4910E85E1CD57AF300E06389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4910E8601CD57AF300E06389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4910E8651CD57AF400E06389 /* Bus Stop FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bus Stop FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4910E8691CD57AF400E06389 /* Bus_Stop_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus_Stop_FinderTests.swift; sourceTree = "<group>"; };
+		4910E86B1CD57AF400E06389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4910E8701CD57AF400E06389 /* Bus Stop FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bus Stop FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4910E8741CD57AF400E06389 /* Bus_Stop_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus_Stop_FinderUITests.swift; sourceTree = "<group>"; };
+		4910E8761CD57AF400E06389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4910E8511CD57AF300E06389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4910E8621CD57AF400E06389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4910E86D1CD57AF400E06389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4910E84B1CD57AF200E06389 = {
+			isa = PBXGroup;
+			children = (
+				4910E8561CD57AF300E06389 /* Bus Stop Finder */,
+				4910E8681CD57AF400E06389 /* Bus Stop FinderTests */,
+				4910E8731CD57AF400E06389 /* Bus Stop FinderUITests */,
+				4910E8551CD57AF300E06389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4910E8551CD57AF300E06389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4910E8541CD57AF300E06389 /* Bus Stop Finder.app */,
+				4910E8651CD57AF400E06389 /* Bus Stop FinderTests.xctest */,
+				4910E8701CD57AF400E06389 /* Bus Stop FinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4910E8561CD57AF300E06389 /* Bus Stop Finder */ = {
+			isa = PBXGroup;
+			children = (
+				4910E8571CD57AF300E06389 /* AppDelegate.swift */,
+				4910E8591CD57AF300E06389 /* ViewController.swift */,
+				4910E85B1CD57AF300E06389 /* Assets.xcassets */,
+				4910E85D1CD57AF300E06389 /* Main.storyboard */,
+				4910E8601CD57AF300E06389 /* Info.plist */,
+			);
+			path = "Bus Stop Finder";
+			sourceTree = "<group>";
+		};
+		4910E8681CD57AF400E06389 /* Bus Stop FinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				4910E8691CD57AF400E06389 /* Bus_Stop_FinderTests.swift */,
+				4910E86B1CD57AF400E06389 /* Info.plist */,
+			);
+			path = "Bus Stop FinderTests";
+			sourceTree = "<group>";
+		};
+		4910E8731CD57AF400E06389 /* Bus Stop FinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4910E8741CD57AF400E06389 /* Bus_Stop_FinderUITests.swift */,
+				4910E8761CD57AF400E06389 /* Info.plist */,
+			);
+			path = "Bus Stop FinderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4910E8531CD57AF300E06389 /* Bus Stop Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4910E8791CD57AF400E06389 /* Build configuration list for PBXNativeTarget "Bus Stop Finder" */;
+			buildPhases = (
+				4910E8501CD57AF300E06389 /* Sources */,
+				4910E8511CD57AF300E06389 /* Frameworks */,
+				4910E8521CD57AF300E06389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bus Stop Finder";
+			productName = "Bus Stop Finder";
+			productReference = 4910E8541CD57AF300E06389 /* Bus Stop Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4910E8641CD57AF400E06389 /* Bus Stop FinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4910E87C1CD57AF400E06389 /* Build configuration list for PBXNativeTarget "Bus Stop FinderTests" */;
+			buildPhases = (
+				4910E8611CD57AF400E06389 /* Sources */,
+				4910E8621CD57AF400E06389 /* Frameworks */,
+				4910E8631CD57AF400E06389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4910E8671CD57AF400E06389 /* PBXTargetDependency */,
+			);
+			name = "Bus Stop FinderTests";
+			productName = "Bus Stop FinderTests";
+			productReference = 4910E8651CD57AF400E06389 /* Bus Stop FinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4910E86F1CD57AF400E06389 /* Bus Stop FinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4910E87F1CD57AF400E06389 /* Build configuration list for PBXNativeTarget "Bus Stop FinderUITests" */;
+			buildPhases = (
+				4910E86C1CD57AF400E06389 /* Sources */,
+				4910E86D1CD57AF400E06389 /* Frameworks */,
+				4910E86E1CD57AF400E06389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4910E8721CD57AF400E06389 /* PBXTargetDependency */,
+			);
+			name = "Bus Stop FinderUITests";
+			productName = "Bus Stop FinderUITests";
+			productReference = 4910E8701CD57AF400E06389 /* Bus Stop FinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4910E84C1CD57AF200E06389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Wellington City Council Extension Apps";
+				TargetAttributes = {
+					4910E8531CD57AF300E06389 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4910E8641CD57AF400E06389 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4910E8531CD57AF300E06389;
+					};
+					4910E86F1CD57AF400E06389 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4910E8531CD57AF300E06389;
+					};
+				};
+			};
+			buildConfigurationList = 4910E84F1CD57AF300E06389 /* Build configuration list for PBXProject "Bus Stop Finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4910E84B1CD57AF200E06389;
+			productRefGroup = 4910E8551CD57AF300E06389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4910E8531CD57AF300E06389 /* Bus Stop Finder */,
+				4910E8641CD57AF400E06389 /* Bus Stop FinderTests */,
+				4910E86F1CD57AF400E06389 /* Bus Stop FinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4910E8521CD57AF300E06389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4910E85C1CD57AF300E06389 /* Assets.xcassets in Resources */,
+				4910E85F1CD57AF300E06389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4910E8631CD57AF400E06389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4910E86E1CD57AF400E06389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4910E8501CD57AF300E06389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4910E85A1CD57AF300E06389 /* ViewController.swift in Sources */,
+				4910E8581CD57AF300E06389 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4910E8611CD57AF400E06389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4910E86A1CD57AF400E06389 /* Bus_Stop_FinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4910E86C1CD57AF400E06389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4910E8751CD57AF400E06389 /* Bus_Stop_FinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4910E8671CD57AF400E06389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4910E8531CD57AF300E06389 /* Bus Stop Finder */;
+			targetProxy = 4910E8661CD57AF400E06389 /* PBXContainerItemProxy */;
+		};
+		4910E8721CD57AF400E06389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4910E8531CD57AF300E06389 /* Bus Stop Finder */;
+			targetProxy = 4910E8711CD57AF400E06389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4910E85D1CD57AF300E06389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4910E85E1CD57AF300E06389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4910E8771CD57AF400E06389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4910E8781CD57AF400E06389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4910E87A1CD57AF400E06389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bus Stop Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4910E87B1CD57AF400E06389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bus Stop Finder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4910E87D1CD57AF400E06389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bus Stop FinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bus Stop Finder.app/Contents/MacOS/Bus Stop Finder";
+			};
+			name = Debug;
+		};
+		4910E87E1CD57AF400E06389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bus Stop FinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-FinderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bus Stop Finder.app/Contents/MacOS/Bus Stop Finder";
+			};
+			name = Release;
+		};
+		4910E8801CD57AF400E06389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bus Stop FinderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Bus Stop Finder";
+			};
+			name = Debug;
+		};
+		4910E8811CD57AF400E06389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Bus Stop FinderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-FinderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Bus Stop Finder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4910E84F1CD57AF300E06389 /* Build configuration list for PBXProject "Bus Stop Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4910E8771CD57AF400E06389 /* Debug */,
+				4910E8781CD57AF400E06389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4910E8791CD57AF400E06389 /* Build configuration list for PBXNativeTarget "Bus Stop Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4910E87A1CD57AF400E06389 /* Debug */,
+				4910E87B1CD57AF400E06389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4910E87C1CD57AF400E06389 /* Build configuration list for PBXNativeTarget "Bus Stop FinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4910E87D1CD57AF400E06389 /* Debug */,
+				4910E87E1CD57AF400E06389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4910E87F1CD57AF400E06389 /* Build configuration list for PBXNativeTarget "Bus Stop FinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4910E8801CD57AF400E06389 /* Debug */,
+				4910E8811CD57AF400E06389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4910E84C1CD57AF200E06389 /* Project object */;
+}

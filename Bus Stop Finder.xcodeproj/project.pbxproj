@@ -19,6 +19,7 @@
 		49D82C711CE2067400D5CD59 /* TestWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C701CE2067400D5CD59 /* TestWindowController.swift */; };
 		49D82C731CE27C2000D5CD59 /* RealtimeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */; };
 		49D82C751CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */; };
+		49D82C771CE2830400D5CD59 /* DepartureVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C761CE2830400D5CD59 /* DepartureVeiwController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		49D82C701CE2067400D5CD59 /* TestWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestWindowController.swift; sourceTree = "<group>"; };
 		49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeBoard.swift; sourceTree = "<group>"; };
 		49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeDepartureEstimate.swift; sourceTree = "<group>"; };
+		49D82C761CE2830400D5CD59 /* DepartureVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureVeiwController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				49D82C701CE2067400D5CD59 /* TestWindowController.swift */,
 				49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */,
 				49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */,
+				49D82C761CE2830400D5CD59 /* DepartureVeiwController.swift */,
 			);
 			path = "Bus Stop Finder";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				491963011CD7095D008D7C63 /* BusStop.swift in Sources */,
 				49D82C731CE27C2000D5CD59 /* RealtimeBoard.swift in Sources */,
 				4910E85A1CD57AF300E06389 /* ViewController.swift in Sources */,
+				49D82C771CE2830400D5CD59 /* DepartureVeiwController.swift in Sources */,
 				491962FF1CD5FB2A008D7C63 /* MyObject.swift in Sources */,
 				49D82C751CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift in Sources */,
 				4910E8581CD57AF300E06389 /* AppDelegate.swift in Sources */,

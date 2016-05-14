@@ -44,7 +44,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     func loadRestApi(){
-        let getEndpoint: String = "http://104.236.117.15:1337"
+        let getEndpoint: String = "http://104.236.117.15:1337/stops"
         let session = NSURLSession.sharedSession()
         let url = NSURL(string: getEndpoint)!
         let task = session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
@@ -64,6 +64,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                 
                 for j in jsonDictionary {
                     let bs = BusStop(stop: j as! NSDictionary)
+                    
                     self.stops.append(bs)
                     self.mainMap.addAnnotation(bs)
                 }

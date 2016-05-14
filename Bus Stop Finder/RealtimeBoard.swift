@@ -10,9 +10,13 @@ import Foundation
 
 class RealtimeBoard {
     var stop: BusStop
+    var departures = [RealtimeDepartureEstimate]()
     
     init(board: NSDictionary){
         stop = BusStop(stop: board["Stop"] as! NSDictionary)
+        for departure in board["Services"] as! NSArray {
+            departures.append(RealtimeDepartureEstimate(estimate: departure as! NSDictionary))
+        }
     }
     
 }

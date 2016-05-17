@@ -9,8 +9,9 @@
 import Cocoa
 import MapKit
 import CoreLocation
+//import AppKit
 
-class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource  {
+class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, MKMapViewDelegate  {
     
     @IBAction func addThing(sender: NSButton) {
         myObjects.append(MyObject(p1: "Wilbur",p2: "Townsend"))
@@ -40,7 +41,50 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         myObjects.append(MyObject(p1: "Thomas",p2: "Horrobin"))
         tableView.setDelegate(self)
         tableView.setDataSource(self)
+        mainMap.delegate = self
+        let l = CLLocationCoordinate2D(latitude: -41.286103, longitude: 174.775535)
+        var s = MKCoordinateSpan()
+        s.latitudeDelta = 0.03
+        s.longitudeDelta = 0.03
+        let r = MKCoordinateRegion(center: l, span: s)
+        
+        mainMap.setRegion(r, animated: false)
         loadRestApi()
+    }// Here we add disclosure button inside annotation window
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        print("viewForannotation")
+        if annotation is MKUserLocation {
+            //return nil
+            return nil
+        }
+        
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
+        
+        if pinView == nil {
+            //println("Pinview was nil")
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView!.canShowCallout = true
+        }
+        
+        let button = NSButton()
+        button.title = "hello button"
+        button.target = self
+        
+        button.action = #selector(dealWithWhatever)
+        
+        pinView?.rightCalloutAccessoryView = button
+        
+        
+        return pinView
+    }
+    
+    
+    
+    @objc
+    func dealWithWhatever(sender: AnyObject?) {
+        print(sender?.description)
     }
     
     func loadRestApi(){

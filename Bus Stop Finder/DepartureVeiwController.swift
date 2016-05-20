@@ -22,7 +22,7 @@ class DepartureVeiwController: NSViewController, NSTableViewDelegate, NSTableVie
     }
     
     func loadRestApi(){
-        let getEndpoint: String = "https://www.metlink.org.nz/api/v1/StopDepartures/4455"
+        let getEndpoint: String = "https://www.metlink.org.nz/api/v1/StopDepartures/4323"
         let session = NSURLSession.sharedSession()
         let url = NSURL(string: getEndpoint)!
         let task = session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in

@@ -33,6 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             {
 //                print("got here 2")
                 let myWindow = NSWindow(contentViewController: vc)
+                vc.loadRestApi(sms)
                 myWindow.title = "Stop: " + sms
                 myWindow.makeKeyAndOrderFront(self)
                 let controller = TestWindowController(window: myWindow)

@@ -11,7 +11,7 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    var windowList = [TestWindowController]()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -20,7 +20,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
+    
+    
+    func openMyWindow(sms: String)
+    {
+        let storyboard = NSStoryboard(name: "Main",bundle: nil)
+//        print("got here 1")
+        
+        if true
+        {
+            if let vc = storyboard.instantiateControllerWithIdentifier("firstWindowController") as? DepartureVeiwController
+            {
+//                print("got here 2")
+                let myWindow = NSWindow(contentViewController: vc)
+                myWindow.title = "Stop: " + sms
+                myWindow.makeKeyAndOrderFront(self)
+                let controller = TestWindowController(window: myWindow)
+                windowList.append(controller)
+//                print("got here 3")
+                controller.showWindow(self)
+                
+            }
+        }
+    }
 
 }
 

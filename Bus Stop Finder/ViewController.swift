@@ -14,16 +14,23 @@ import CoreLocation
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, MKMapViewDelegate  {
     
     @IBAction func addThing(sender: NSButton) {
-        myObjects.append(MyObject(p1: "Wilbur",p2: "Townsend"))
-        tableView.reloadData()
+//        myObjects.append(MyObject(p1: "Wilbur",p2: "Townsend"))
+//        tableView.reloadData()
         
-        let alert = NSAlert()
-        alert.messageText = "Warning"
-        alert.addButtonWithTitle("Yes")
-        alert.addButtonWithTitle("No")
-        alert.informativeText = "You have made changes, are you sure you want to discard them? " + stops.count.description
         
-        alert.runModal()
+        print("got here 0")
+        
+//        let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+//        
+//        appDelegate.openMyWindow("4323")
+        
+//        let alert = NSAlert()
+//        alert.messageText = "Warning"
+//        alert.addButtonWithTitle("Yes")
+//        alert.addButtonWithTitle("No")
+//        alert.informativeText = "You have made changes, are you sure you want to discard them? " + stops.count.description
+//        
+//        alert.runModal()
     }
     
     @IBOutlet weak var mainMap: MKMapView!
@@ -53,7 +60,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }// Here we add disclosure button inside annotation window
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
-        print("viewForannotation")
+        //print("viewForannotation")
         if annotation is MKUserLocation {
             //return nil
             return nil
@@ -68,9 +75,13 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             pinView!.canShowCallout = true
         }
         
+        let bs = annotation as! BusStop
+        
         let button = NSButton()
         button.title = "hello button"
-        button.target = self
+        button.target = bs
+        
+        //print(bs.sms)
         
         button.action = #selector(dealWithWhatever)
         
@@ -81,10 +92,9 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     
-    
     @objc
-    func dealWithWhatever(sender: AnyObject?) {
-        print(sender?.description)
+    func dealWithWhatever(sender: NSButton) {
+        print(sender.description)
     }
     
     func loadRestApi(){

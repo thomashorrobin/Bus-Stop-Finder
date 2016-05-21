@@ -23,6 +23,12 @@ class BusStop: NSObject, MKAnnotation {
         return name
     }
     
+    @objc
+    func dealWithWhatever(sender: AnyObject?) {
+        let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.openMyWindow(sms)
+    }
+    
     var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }

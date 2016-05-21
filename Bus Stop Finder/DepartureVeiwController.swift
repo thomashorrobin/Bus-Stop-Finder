@@ -43,7 +43,7 @@ class DepartureVeiwController: NSViewController, NSTableViewDelegate, NSTableVie
                 self.board = RealtimeBoard(board: jsonDictionary)
                 
                 self.tableView.reloadData()
-                print(self.board?.stop.name)
+                //print(self.board?.stop.name)
                 
             } catch {
                 print("bad things happened")

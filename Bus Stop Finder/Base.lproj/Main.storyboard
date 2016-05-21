@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -807,8 +807,8 @@
         <!--Window Controller-->
         <scene sceneID="d2G-Qm-gEc">
             <objects>
-                <windowController id="tOx-dM-qfe" customClass="TestWindowController" customModule="Bus_Stop_Finder" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="I1Q-Pw-Yrz">
+                <windowController storyboardIdentifier="secondWindowController" id="tOx-dM-qfe" customClass="TestWindowController" customModule="Bus_Stop_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" identifier="dvc" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="I1Q-Pw-Yrz">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="249" width="479" height="552"/>
@@ -820,13 +820,13 @@
                 </windowController>
                 <customObject id="F4j-BL-I9W" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845.5" y="864"/>
+            <point key="canvasLocation" x="941.5" y="711"/>
         </scene>
         <!--Departure Veiw Controller-->
         <scene sceneID="rvq-ZG-XgS">
             <objects>
-                <viewController id="Hb3-V9-8hs" customClass="DepartureVeiwController" customModule="Bus_Stop_Finder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="nLJ-Pl-9qQ">
+                <viewController storyboardIdentifier="firstWindowController" id="Hb3-V9-8hs" customClass="DepartureVeiwController" customModule="Bus_Stop_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" identifier="testtest" id="nLJ-Pl-9qQ">
                         <rect key="frame" x="0.0" y="0.0" width="387" height="506"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -941,7 +941,7 @@
                 </viewController>
                 <customObject id="K6O-mp-Ydn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836.5" y="1558"/>
+            <point key="canvasLocation" x="941.5" y="1499"/>
         </scene>
     </scenes>
     <resources>

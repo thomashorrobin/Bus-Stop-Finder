@@ -27,6 +27,10 @@ class BusStop: NSObject, MKAnnotation {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
+    override var description: String{
+        return name
+    }
+    
     init(latitude: Double, longitude: Double, busStopName: String, sms: String) {
         self.latitude = latitude
         self.longitude = longitude

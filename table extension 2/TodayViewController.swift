@@ -22,11 +22,13 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let bs1 = BusStop(latitude: -41.2811885, longitude: 174.7504369, busStopName: "Karori Road at Standen Street (near 90)", sms: "4323")
+        let bs2 = BusStop(latitude: -41.2811885, longitude: 174.7504369, busStopName: "Courtenay Place - Paramount", sms: "5000")
 
         // Set up the widget list view controller.
         // The contents property should contain an object for each row in the list.
         //sleep(5)
-        self.listViewController.contents = ["Hello World!","other haha haha"]
+        self.listViewController.contents = [bs1, bs2]
     }
 
     override func dismissViewController(viewController: NSViewController) {

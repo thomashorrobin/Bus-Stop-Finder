@@ -28,6 +28,9 @@
 		496C5EB01CF15A6E004F6DD6 /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C5EAE1CF15A6E004F6DD6 /* ListRowViewController.xib */; };
 		496C5EB41CF15A6E004F6DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496C5EB21CF15A6E004F6DD6 /* InfoPlist.strings */; };
 		496C5EB71CF15A6E004F6DD6 /* table extension 2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 496C5EA21CF15A6E004F6DD6 /* table extension 2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		496C5EBE1CF19F83004F6DD6 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C5EBD1CF19F83004F6DD6 /* BusStop.swift */; };
+		496C5EC11CF19FFA004F6DD6 /* RealtimeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C5EBF1CF19FFA004F6DD6 /* RealtimeBoard.swift */; };
+		496C5EC21CF19FFA004F6DD6 /* RealtimeDepartureEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C5EC01CF19FFA004F6DD6 /* RealtimeDepartureEstimate.swift */; };
 		49D82C711CE2067400D5CD59 /* TestWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C701CE2067400D5CD59 /* TestWindowController.swift */; };
 		49D82C731CE27C2000D5CD59 /* RealtimeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */; };
 		49D82C751CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */; };
@@ -112,6 +115,9 @@
 		496C5EAF1CF15A6E004F6DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListRowViewController.xib; sourceTree = "<group>"; };
 		496C5EB11CF15A6E004F6DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496C5EB31CF15A6E004F6DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		496C5EBD1CF19F83004F6DD6 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		496C5EBF1CF19FFA004F6DD6 /* RealtimeBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeBoard.swift; sourceTree = "<group>"; };
+		496C5EC01CF19FFA004F6DD6 /* RealtimeDepartureEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeDepartureEstimate.swift; sourceTree = "<group>"; };
 		49D82C701CE2067400D5CD59 /* TestWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestWindowController.swift; sourceTree = "<group>"; };
 		49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeBoard.swift; sourceTree = "<group>"; };
 		49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeDepartureEstimate.swift; sourceTree = "<group>"; };
@@ -254,6 +260,9 @@
 		496C5EA41CF15A6E004F6DD6 /* table extension 2 */ = {
 			isa = PBXGroup;
 			children = (
+				496C5EBF1CF19FFA004F6DD6 /* RealtimeBoard.swift */,
+				496C5EC01CF19FFA004F6DD6 /* RealtimeDepartureEstimate.swift */,
+				496C5EBD1CF19F83004F6DD6 /* BusStop.swift */,
 				496C5EA71CF15A6E004F6DD6 /* TodayViewController.swift */,
 				496C5EA91CF15A6E004F6DD6 /* ListRowViewController.swift */,
 				496C5EAB1CF15A6E004F6DD6 /* TodayViewController.xib */,
@@ -517,6 +526,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496C5EC21CF19FFA004F6DD6 /* RealtimeDepartureEstimate.swift in Sources */,
+				496C5EBE1CF19F83004F6DD6 /* BusStop.swift in Sources */,
+				496C5EC11CF19FFA004F6DD6 /* RealtimeBoard.swift in Sources */,
 				496C5EA81CF15A6E004F6DD6 /* TodayViewController.swift in Sources */,
 				496C5EAA1CF15A6E004F6DD6 /* ListRowViewController.swift in Sources */,
 			);

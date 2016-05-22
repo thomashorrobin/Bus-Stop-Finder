@@ -21,6 +21,13 @@
 		496C5E921CF1280A004F6DD6 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C5E901CF1280A004F6DD6 /* TodayViewController.xib */; };
 		496C5E961CF1280A004F6DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496C5E941CF1280A004F6DD6 /* InfoPlist.strings */; };
 		496C5E991CF1280A004F6DD6 /* today extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 496C5E871CF1280A004F6DD6 /* today extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		496C5EA31CF15A6E004F6DD6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496C5E891CF1280A004F6DD6 /* NotificationCenter.framework */; };
+		496C5EA81CF15A6E004F6DD6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C5EA71CF15A6E004F6DD6 /* TodayViewController.swift */; };
+		496C5EAA1CF15A6E004F6DD6 /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C5EA91CF15A6E004F6DD6 /* ListRowViewController.swift */; };
+		496C5EAD1CF15A6E004F6DD6 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C5EAB1CF15A6E004F6DD6 /* TodayViewController.xib */; };
+		496C5EB01CF15A6E004F6DD6 /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C5EAE1CF15A6E004F6DD6 /* ListRowViewController.xib */; };
+		496C5EB41CF15A6E004F6DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496C5EB21CF15A6E004F6DD6 /* InfoPlist.strings */; };
+		496C5EB71CF15A6E004F6DD6 /* table extension 2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 496C5EA21CF15A6E004F6DD6 /* table extension 2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49D82C711CE2067400D5CD59 /* TestWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C701CE2067400D5CD59 /* TestWindowController.swift */; };
 		49D82C731CE27C2000D5CD59 /* RealtimeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */; };
 		49D82C751CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */; };
@@ -49,6 +56,13 @@
 			remoteGlobalIDString = 496C5E861CF1280A004F6DD6;
 			remoteInfo = "today extension";
 		};
+		496C5EB51CF15A6E004F6DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4910E84C1CD57AF200E06389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496C5EA11CF15A6E004F6DD6;
+			remoteInfo = "table extension 2";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				496C5EB71CF15A6E004F6DD6 /* table extension 2.appex in Embed App Extensions */,
 				496C5E991CF1280A004F6DD6 /* today extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -89,6 +104,14 @@
 		496C5E911CF1280A004F6DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		496C5E931CF1280A004F6DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496C5E951CF1280A004F6DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		496C5EA21CF15A6E004F6DD6 /* table extension 2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "table extension 2.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		496C5EA61CF15A6E004F6DD6 /* table_extension_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = table_extension_2.entitlements; sourceTree = "<group>"; };
+		496C5EA71CF15A6E004F6DD6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		496C5EA91CF15A6E004F6DD6 /* ListRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowViewController.swift; sourceTree = "<group>"; };
+		496C5EAC1CF15A6E004F6DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		496C5EAF1CF15A6E004F6DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListRowViewController.xib; sourceTree = "<group>"; };
+		496C5EB11CF15A6E004F6DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496C5EB31CF15A6E004F6DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49D82C701CE2067400D5CD59 /* TestWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestWindowController.swift; sourceTree = "<group>"; };
 		49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeBoard.swift; sourceTree = "<group>"; };
 		49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeDepartureEstimate.swift; sourceTree = "<group>"; };
@@ -126,6 +149,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		496C5E9F1CF15A6E004F6DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496C5EA31CF15A6E004F6DD6 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +168,7 @@
 				4910E8681CD57AF400E06389 /* Bus Stop FinderTests */,
 				4910E8731CD57AF400E06389 /* Bus Stop FinderUITests */,
 				496C5E8B1CF1280A004F6DD6 /* today extension */,
+				496C5EA41CF15A6E004F6DD6 /* table extension 2 */,
 				496C5E881CF1280A004F6DD6 /* Frameworks */,
 				4910E8551CD57AF300E06389 /* Products */,
 			);
@@ -149,6 +181,7 @@
 				4910E8651CD57AF400E06389 /* Bus Stop FinderTests.xctest */,
 				4910E8701CD57AF400E06389 /* Bus Stop FinderUITests.xctest */,
 				496C5E871CF1280A004F6DD6 /* today extension.appex */,
+				496C5EA21CF15A6E004F6DD6 /* table extension 2.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,11 +192,11 @@
 				4910E8841CD58BD100E06389 /* Bus Stop Finder.entitlements */,
 				4910E8571CD57AF300E06389 /* AppDelegate.swift */,
 				4910E8591CD57AF300E06389 /* ViewController.swift */,
+				491963001CD7095D008D7C63 /* BusStop.swift */,
 				4910E85B1CD57AF300E06389 /* Assets.xcassets */,
 				4910E85D1CD57AF300E06389 /* Main.storyboard */,
 				4910E8601CD57AF300E06389 /* Info.plist */,
 				491962FE1CD5FB2A008D7C63 /* MyObject.swift */,
-				491963001CD7095D008D7C63 /* BusStop.swift */,
 				49D82C701CE2067400D5CD59 /* TestWindowController.swift */,
 				49D82C721CE27C2000D5CD59 /* RealtimeBoard.swift */,
 				49D82C741CE27CED00D5CD59 /* RealtimeDepartureEstimate.swift */,
@@ -218,6 +251,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		496C5EA41CF15A6E004F6DD6 /* table extension 2 */ = {
+			isa = PBXGroup;
+			children = (
+				496C5EA71CF15A6E004F6DD6 /* TodayViewController.swift */,
+				496C5EA91CF15A6E004F6DD6 /* ListRowViewController.swift */,
+				496C5EAB1CF15A6E004F6DD6 /* TodayViewController.xib */,
+				496C5EAE1CF15A6E004F6DD6 /* ListRowViewController.xib */,
+				496C5EB11CF15A6E004F6DD6 /* Info.plist */,
+				496C5EB21CF15A6E004F6DD6 /* InfoPlist.strings */,
+				496C5EA51CF15A6E004F6DD6 /* Supporting Files */,
+			);
+			path = "table extension 2";
+			sourceTree = "<group>";
+		};
+		496C5EA51CF15A6E004F6DD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				496C5EA61CF15A6E004F6DD6 /* table_extension_2.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +289,7 @@
 			);
 			dependencies = (
 				496C5E981CF1280A004F6DD6 /* PBXTargetDependency */,
+				496C5EB61CF15A6E004F6DD6 /* PBXTargetDependency */,
 			);
 			name = "Bus Stop Finder";
 			productName = "Bus Stop Finder";
@@ -293,6 +349,23 @@
 			productReference = 496C5E871CF1280A004F6DD6 /* today extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		496C5EA11CF15A6E004F6DD6 /* table extension 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496C5EBA1CF15A6E004F6DD6 /* Build configuration list for PBXNativeTarget "table extension 2" */;
+			buildPhases = (
+				496C5E9E1CF15A6E004F6DD6 /* Sources */,
+				496C5E9F1CF15A6E004F6DD6 /* Frameworks */,
+				496C5EA01CF15A6E004F6DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "table extension 2";
+			productName = "table extension 2";
+			productReference = 496C5EA21CF15A6E004F6DD6 /* table extension 2.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -327,6 +400,10 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6H77GT49V5;
 					};
+					496C5EA11CF15A6E004F6DD6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6H77GT49V5;
+					};
 				};
 			};
 			buildConfigurationList = 4910E84F1CD57AF300E06389 /* Build configuration list for PBXProject "Bus Stop Finder" */;
@@ -346,6 +423,7 @@
 				4910E8641CD57AF400E06389 /* Bus Stop FinderTests */,
 				4910E86F1CD57AF400E06389 /* Bus Stop FinderUITests */,
 				496C5E861CF1280A004F6DD6 /* today extension */,
+				496C5EA11CF15A6E004F6DD6 /* table extension 2 */,
 			);
 		};
 /* End PBXProject section */
@@ -380,6 +458,16 @@
 			files = (
 				496C5E921CF1280A004F6DD6 /* TodayViewController.xib in Resources */,
 				496C5E961CF1280A004F6DD6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496C5EA01CF15A6E004F6DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496C5EAD1CF15A6E004F6DD6 /* TodayViewController.xib in Resources */,
+				496C5EB41CF15A6E004F6DD6 /* InfoPlist.strings in Resources */,
+				496C5EB01CF15A6E004F6DD6 /* ListRowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +513,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		496C5E9E1CF15A6E004F6DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496C5EA81CF15A6E004F6DD6 /* TodayViewController.swift in Sources */,
+				496C5EAA1CF15A6E004F6DD6 /* ListRowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -442,6 +539,11 @@
 			isa = PBXTargetDependency;
 			target = 496C5E861CF1280A004F6DD6 /* today extension */;
 			targetProxy = 496C5E971CF1280A004F6DD6 /* PBXContainerItemProxy */;
+		};
+		496C5EB61CF15A6E004F6DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496C5EA11CF15A6E004F6DD6 /* table extension 2 */;
+			targetProxy = 496C5EB51CF15A6E004F6DD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,6 +568,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				496C5E951CF1280A004F6DD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		496C5EAB1CF15A6E004F6DD6 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496C5EAC1CF15A6E004F6DD6 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		496C5EAE1CF15A6E004F6DD6 /* ListRowViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496C5EAF1CF15A6E004F6DD6 /* Base */,
+			);
+			name = ListRowViewController.xib;
+			sourceTree = "<group>";
+		};
+		496C5EB21CF15A6E004F6DD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496C5EB31CF15A6E004F6DD6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -669,6 +795,36 @@
 			};
 			name = Release;
 		};
+		496C5EB81CF15A6E004F6DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "table extension 2/table_extension_2.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "table extension 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-Finder.table-extension-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		496C5EB91CF15A6E004F6DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "table extension 2/table_extension_2.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "table extension 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wccapps.Bus-Stop-Finder.table-extension-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -713,6 +869,15 @@
 			buildConfigurations = (
 				496C5E9A1CF1280A004F6DD6 /* Debug */,
 				496C5E9B1CF1280A004F6DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496C5EBA1CF15A6E004F6DD6 /* Build configuration list for PBXNativeTarget "table extension 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496C5EB81CF15A6E004F6DD6 /* Debug */,
+				496C5EB91CF15A6E004F6DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

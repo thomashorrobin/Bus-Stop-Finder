@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KU6-MB-4x2">
-                    <rect key="frame" x="-2" y="183" width="304" height="19"/>
+                    <rect key="frame" x="18" y="154" width="304" height="28"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="28" id="4Yb-ZR-gMg"/>
                     </constraints>
@@ -29,13 +29,6 @@
                         <binding destination="-2" name="value" keyPath="self.representedObject.description" id="mRI-fA-4DV"/>
                     </connections>
                 </textField>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mW8-QM-tXr">
-                    <rect key="frame" x="88" y="147" width="81" height="32"/>
-                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Iyw-XF-g1C">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="KU6-MB-4x2" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="2" id="AfO-ab-vWV"/>

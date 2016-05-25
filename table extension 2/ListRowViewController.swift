@@ -14,6 +14,11 @@ class ListRowViewController: NSViewController {
         return "ListRowViewController"
     }
 
+    @IBAction func btnAction(sender: AnyObject) {
+        btnOutlet.title = "hi tom heh"
+    }
+    @IBOutlet weak var btnOutlet: NSButton!
+    
     override func loadView() {
         super.loadView()
         //let bs = BusStop()

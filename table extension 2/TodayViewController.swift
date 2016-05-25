@@ -105,6 +105,9 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
 
     func widgetList(list: NCWidgetListViewController!, didReorderRow row: Int, toRow newIndex: Int) {
         // The user has reordered an item in the list.
+//        print(row)
+//        print(newIndex)
+//        print("==END==")
     }
 
     func widgetList(list: NCWidgetListViewController!, shouldRemoveRow row: Int) -> Bool {
@@ -121,6 +124,7 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     func widgetSearch(searchController: NCWidgetSearchViewController!, searchForTerm searchTerm: String!, maxResults max: Int) {
         // The user has entered a search term. Set the controller's searchResults property to the matching items.
         searchController.searchResults = []
+        loadRestApi(searchTerm)
     }
 
     func widgetSearchTermCleared(searchController: NCWidgetSearchViewController!) {
@@ -130,6 +134,54 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
 
     func widgetSearch(searchController: NCWidgetSearchViewController!, resultSelected object: AnyObject!) {
         // The user has selected a search result from the list.
+        self.listViewController.contents.append(object)
+    }
+    
+    var searchResults2 = [BusStop]()
+    
+    func loadRestApi(searchTerm: String!){
+        let getEndpoint: String = "https://www.metlink.org.nz/api/v1/StopSearch/" + searchTerm.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLPathAllowedCharacterSet())!
+        let session = NSURLSession.sharedSession()
+        let url = NSURL(string: getEndpoint)!
+        print(url.absoluteString)
+        let task = session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            
+//            let realResponse2 = response as? NSHTTPURLResponse
+//            print(realResponse2?.statusCode)
+            // Make sure we get an OK response
+            guard let realResponse = response as? NSHTTPURLResponse where
+                realResponse.statusCode == 200 else {
+                    print("Not a 200 response")
+                    return
+            }
+            
+            // Read the JSON
+            do {
+                
+                // Parse the JSON to get the IP
+                let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+                
+                for j in jsonDictionary {
+                    let bs = BusStop(stop: j as! NSDictionary)
+                    self.searchResults2.append(bs)
+                }
+            } catch {
+                print("bad things happened")
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                //self.tableView.reloadData()
+                //self.searchController!.searchResults.append(self.searchResults2)
+                self.searchController!.searchResults = []
+                for busStop in self.searchResults2{
+                    self.searchController!.searchResults.append(busStop)
+                }
+                //self.searchController?.searchResults.appendContentsOf(self.searchResults2)
+                //print(self.searchResults2)
+            })
+        })
+        
+        task.resume()
     }
 
 }
